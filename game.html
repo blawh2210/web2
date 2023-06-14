@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+		h1{
+            font-size: 10px;
+			color: black;
+			position:absolute;
+			top:40px;
+			left:100px;
+        }   
+
+        .scenetop{
+            position: relative;
+            border: 1px solid black;
+            width: 100vw;
+            height: 10vh;
+            padding: 1px;
+        }
+
+        .relative{
+            position: relative;
+            margin:0px auto;
+        }
+
+        .topsquare{
+            border: 1px solid black;
+            font-size: 30px;
+            color: black;
+			position:absolute;
+            top:35px;
+			left:150px;
+        }
+
+        .midtextst{
+            border: 1px solid black;
+            font-size: 30px;
+            color: black;
+			position:absolute;
+            top:130px;
+			left:220px;
+        }
+
+        .midtextba{
+            border: 1px solid black;
+            font-size: 30px;
+            color: black;
+			position:absolute;
+            top:400px;
+			left:480px;
+        }
+
+        .midflex{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            padding: 0%;
+        }
+
+        .middlesquare{
+            border: 1px solid black;
+            font-size: 30px;
+            width: 50%;
+            height: 100vh;
+            color: black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            }
+
+        .middlesquare2{
+            border: 1px solid black;
+            font-size: 30px;
+            width: 50%;
+            height: 100vh;
+            color: black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+        }
+
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+		<div class="relative"><img src="./game/fixed_mon.JPG" width="70%" height="100vh" alt=""></div>
+        <div class="topsquare">
+            <a href="./index.html" style="color:white;">回首頁</a>
+        </div>
+        <div class="midflex">
+            <div class="middlesquare">
+                <img src="./game/raiden_story.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="midtextst">
+                <a href="./story.html" style="color:white;">劇情</a>
+            </div>
+            <div class="middlesquare2">
+                <img src="./game/raiden_battle.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="midtextba">
+                <a href="./battle.html" style="color:white;">戰鬥</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

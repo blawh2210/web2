@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 80vw;
+            height: 100vh;
+            background-color: lightgray;
+            flex-direction: column;
+        }
+
+        .header{
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color:gold;
+        }
+
+        .nav{
+            background-color: lightgreen;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+        }
+
+        .navItem{
+            background-color: lightgreen;
+            border: 1px solid red;
+            flex-basis: 100%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .group{position: relative;}
+        .subGroupName{
+            background-color: black;
+            font-size: 24px;
+            color: gold;
+            padding: 5px 0;
+            position: sticky;
+        }
+
+        .article .group .subGroup:nth-child(2){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .subItem_img{flex-basis: calc(100%/4);}
+        .subItem img{width: 100%;}
+
+        .article .group .subGroup:nth-child(2) .subItem:last-child{
+            flex-basis: 100%;
+        }
+
+        .footer{
+            width: 100%;
+            height: 10vh;
+            font-size: 50px;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            background-color: #5B5B5B;
+        }
+        p{font-size: 12px;}
+        a{text-decoration: none;}
+        a:hover{color: brown;}
+        .subGroupName01{
+            background-color: lightgray;
+            color: black;
+        }
+        .subGroup{
+            background-color: #3C3C3C;
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><img src="./image1/000001.png" alt="" width="150px" height="150px"> Penthouse <a href="./drama.html">返回
+        </a></div>
+        <div class="article">
+            <div class="group">
+                <div class="subGroupName subGroupName01">人物照</div>
+                <div class="subGroup">
+                    <div class="subItem subItem_img"><h1>沈秀蓮</h1><img src="./image1/03.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>朱丹泰</h1><img src="./image1/06.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>朱碩勛</h1><img src="./image1/07.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>朱碩京</h1><img src="./image1/08.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><img id="showImg" src="./image1/03.jpg" alt=""></div>
+                </div>
+
+                <div class="subGroupName subGroupName02">沈秀蓮</div>
+                <div class="subGroup">
+                    <div class="subItem">財閥家庭出身，在家人的愛之下美好地成長。就如她擁有的美麗外表那般，性格也相當溫順，</div>
+                    <div class="subItem">但碰上愛情卻變得莽撞，是個有魅力的女人。對於這樣的她來說，與只追求完美的丹泰之間</div>
+                    <div class="subItem">的婚姻生活，卻是持續不斷的窒息與鬱悶。雖然從未真心愛過他，但是為了兩個孩子，她依</div>
+                    <div class="subItem">舊想盡方法做好妻子與母親的角色。因而，在放棄自己的幸福之下，她在Penthouse裏已過著很長時間的枯燥無味生活。</div>
+                </div>
+
+                <div class="subGroupName subGroupName03">朱丹泰</div>
+                <div class="subGroup">
+                    <div class="subItem">幾乎全世界各地都有著他的建築，就連三城洞最高層的住商複合建築赫拉皇宮也是他的作品。不僅在建築方面，</div>
+                    <div class="subItem">他在房地產方面也有極高天賦，擅長找出賺錢的商機，所以每當投資房地產時都能大賺一筆。</div>
+                    <div class="subItem">甚至有傳聞說，如果沒踏上他的土地就不能算是到過江南，因他在江南擁有無數黃金地段和數座高層建築。</div>
+                    <div class="subItem">因為他是白手起家，因此是個有嚴重強迫症的完美主義者，決不允許有絲毫的散漫和耍嘴皮子，</div>
+                    <div class="subItem">時刻都要做到最好，直至完美。雖然因為流淌著冷血動物的血液，而對家人非常粗暴，但他卻不斷努力想將完美家庭展現於他人眼前。</div>
+                </div>
+
+                <div class="subGroupName subGroupName04">朱碩勛</div>
+                <div class="subGroup">
+                    <div class="subItem">專長為鋼琴，是個在外貌和能力都沒有缺點的完美男生。在學校裏，他像玩具一樣調戲老師和朋友，</div>
+                    <div class="subItem">享受著完美與叛逆的雙重面貌。當他的妹妹碩京要求他把新玩具設定為羅娜時，</div>
+                    <div class="subItem">面對羅娜對於任何折磨都不會屈服的態度，漸漸的引發他對羅娜的惻隱之心，進而對她產生好感。</div>
+                </div>
+
+                <div class="subGroupName subGroupName05">朱碩京</div>
+                <div class="subGroup">
+                    <div class="subItem">一個沒有真心與靈魂的冰冷女生，專修聲樂。一開始就被家人決定朝著成為聲樂家的路發展，</div>
+                    <div class="subItem">但實際上並不喜歡唱歌和學習，與全校第一的哥哥碩勳相比實力明顯不足，並總是被爸爸以成績順序與哥哥比較。</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">網頁程式設計:第G10組</div>
+    </div>
+
+    <script>
+        let images = document.getElementsByTagName('img');
+        let showImg = document.getElementById('showImg');
+        images[0].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[1].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[2].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[3].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+    </script>
+</body>
+</html>

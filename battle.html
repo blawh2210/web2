@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+		h1{
+            font-size: 10px;
+			color: black;
+			position:absolute;
+			top:40px;
+			left:100px;
+        }   
+
+        .scenetop{
+            position: relative;
+            border: 1px solid black;
+            width: 100vw;
+            height: 10vh;
+            padding: 1px;
+        }
+
+        .relative{
+            width: 100%;
+            height: 50%;
+            position: relative;
+            border: 1px solid;
+            margin: 2px auto;
+        }
+
+        .topdire{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            
+        }
+
+        .topsq{
+            font-size: 25px;
+            color: black;
+			position:absolute;
+            top:20px;
+			left:170px;
+            text-align: center;
+        }
+
+        .secsq{
+            font-size: 25px;
+            color: black;
+			position:absolute;
+            top:20px;
+			left:350px;
+            text-align: center;
+            color: white;
+        }
+
+        .thirdsq{
+            font-size: 25px;
+            color: white;
+			position:absolute;
+            top:20px;
+			left:530px;
+            text-align: center;
+        }
+        
+        .midflex{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 0 auto;
+            padding: 0%;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .middlesquare{
+            border: 1px solid black;
+            font-size: 30px;
+            width: 100%;
+            height: 30vh;
+            color: black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 0;
+            }
+
+        .mond{
+            border: 1px solid black;
+            font-size: 30px;
+            width: 100%;
+            height: 35vh;
+            color: black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 0;
+            background-color: rgba(66, 170, 132, 0.5);
+            }
+
+        .cn{
+                font-size: 30px;
+            }
+
+        .instexts{
+                font-size: 10px;
+            }
+
+        img{
+            display: block;
+            margin: 0 auto;
+            }
+
+        .teamname{
+            font-size: 30px;
+        }
+
+        .battletext{
+            font-size: 15px;
+        }
+
+        .teampicture{
+            width: 10%;
+            height: 10%;
+            position: absolute;
+            top: 50px;
+            left: 300px;
+        }
+
+        .teampicture2{
+            width: 10%;
+            height: 10%;
+            position: absolute;
+            top: 590px;
+            left: 310px;
+        }
+
+        .teampicture3{
+            width: 10%;
+            height: 10%;
+            position: absolute;
+            top: 1000px;
+            left: 310px;
+        }
+
+        .yt1{
+            position: absolute;
+            left: 250px;
+            top: 270px;
+        }
+
+        .yt2{
+            position: absolute;
+            left: 250px;
+            top: 680px;
+        }
+
+        .yt3{
+            position: absolute;
+            left: 250px;
+            top: 1120px;
+        }
+
+
+        .pink{
+            background-color: pink;
+            border-radius: 10px;
+            width: 220px;
+        }
+
+        .pink2{
+            background-color: pink;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .green{
+            background-color: greenyellow;
+            width: 220px;
+            border-radius: 10px;
+
+        }
+
+        .blue{
+            background-color: rgb(60, 214, 235);
+            width: 150px;
+            border-radius: 10px;
+        }
+        
+        .purple{
+            background-color: rgb(221, 117, 221);
+            border-radius: 10px;
+            width: 180px;
+        }
+
+        .hint{
+            margin: auto 0;
+            font-size: 10px;
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="topdire">
+		<div class="relative"><img src="./game/fixed_mon.JPG" width="100%" height="50vh" alt=""></div>
+        <div class="relative"><img src="./game/Liyue_Harbour.png" width="100%" height="50vh" alt=""></div>
+		<div class="relative"><img src="./game/Inazuma_City.jpg" width="100%" height="50vh" alt=""></div>
+        </div>
+        <div class="topsq">
+            <a href="./game.html" style="color:white;">回遊戲首頁</a>
+        </div>
+        <div class="secsq" >
+            <a href="./story.html" style="color:white;" >劇情</a>
+        </div>
+        <div class="thirdsq">
+            戰鬥
+        </div>
+        <div class="midflex">
+            <div class="hint">注意:以下隊伍不一定為最優解，請根據當前版本環境替換角色以及隊伍</div>
+            <div class="teamname">隊伍:雷電國家隊</div>
+            <div class="teampicture"><img src="./game/IMG_2010.png" width="200px" height="40px" alt=""></div>
+            <br>
+            <div class="pink">
+            <div class="battletext">組成:雷電將軍 班尼特 香菱 行秋</div>
+            </div>
+            <br>
+            <div class="yt1"><iframe width="260" height="160" src="https://www.youtube.com/embed/v-dqSHPi-mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="green">
+            <div class="battletext">武器:   </div>
+            <div class="battletext">雷電將軍:漁獲/西風長槍</div>
+            <div class="battletext">班尼特:基礎攻擊力高的有啥用啥</div>
+            <div class="battletext">香菱:漁獲/西風長槍</div>
+            <div class="battletext">行秋:祭禮劍/西風劍</div>
+            </div>
+            <br>
+            <div class="blue">
+            <div class="battletext">聖遺物:</div>
+            <div class="battletext">雷電將軍:絕緣四件套</div>
+            <div class="battletext">班尼特:宗室四件套</div>
+            <div class="battletext">香菱:絕緣四件套</div>
+            <div class="battletext">行秋:絕緣四件套</div>
+            </div>
+            <br>
+            <div class="purple">
+            <div class="battletext">打法:</div>
+            <div class="battletext">雷電將軍E 行秋E+Q(確保可以吃到自己產的元素球)</div>
+            <div class="battletext">班尼特Q+E 香菱吃到班尼特的球之前Q+E</div>
+            <div class="battletext">雷電將軍Q</div>
+            </div>
+            <br>
+            <div class="teamname">隊伍:草神國家隊</div>
+            <div class="teampicture2"><img src="./game/IMG_2011.png" width="200px" height="40px" alt=""></div>
+            <br>
+            <div class="pink2">
+            <div class="battletext">組成:納西妲 行秋 久岐忍+任意輔助or破盾位</div>
+            </div>
+            <br>
+            <div class="yt2"><iframe width="260" height="160" src="https://www.youtube.com/embed/huiPU6AgScc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="green">
+            <div class="battletext">武器:   </div>
+            <div class="battletext">納西妲:祭禮殘章</div>
+            <div class="battletext">行秋:祭禮劍/西風劍</div>
+            <div class="battletext">久岐忍:鬼傘</div>
+            </div>
+            <br>
+            <div class="blue">
+            <div class="battletext">聖遺物:</div>
+            <div class="battletext">納西妲:草套四件套</div>
+            <div class="battletext">行秋:絕緣四件套</div>
+            <div class="battletext">久岐忍:飾金四件套</div>
+            </div>
+            <br>
+            <div class="purple">
+            <div class="battletext">打法:</div>
+            <div class="battletext">納西妲E掃全場+Q</div>
+            <div class="battletext">行秋E+Q(確保可以吃到自己產的元素球)</div>
+            <div class="battletext">久岐忍E 草神站場普攻+E</div>
+            </div>
+            <br>
+            <div class="teamname">隊伍:影夜琴</div>
+            <div class="teampicture3"><img src="./game/IMG_2012.png" width="200px" height="40px" alt=""></div>
+            <br>
+            <div class="pink2">
+            <div class="battletext">組成:雷電將軍 夜蘭 琴+任意輔助or破盾位</div>
+            </div>
+            <br>
+            <div class="yt3"><iframe width="260" height="160" src="https://www.youtube.com/embed/ztzZIUvZqNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="green">
+            <div class="battletext">武器:   </div>
+            <div class="battletext">雷電將軍:漁獲/西風長槍</div>
+            <div class="battletext">夜蘭:西風弓</div>
+            <div class="battletext">琴:任意充能單手劍</div>
+            </div>
+            <br>
+            <div class="blue">
+            <div class="battletext">聖遺物:</div>
+            <div class="battletext">雷電將軍:絕緣四件套</div>
+            <div class="battletext">夜蘭:絕緣四件套</div>
+            <div class="battletext">琴:四風套</div>
+            </div>
+            <br>
+            <div class="purple">
+            <div class="battletext">打法:</div>
+            <div class="battletext">雷電將軍E 夜蘭Q+E(確保可以吃到自己產的元素球)</div>
+            <div class="battletext">琴團長E+Q(二命需吃到自己的能量球)</div>
+            <div class="battletext">雷電將軍Q</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

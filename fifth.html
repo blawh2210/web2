@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 80vw;
+            height: 100vh;
+            background-color: lightgray;
+            flex-direction: column;
+        }
+
+        .header{
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color:gold;
+        }
+
+        .nav{
+            background-color: lightgreen;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+        }
+
+        .navItem{
+            background-color: lightgreen;
+            border: 1px solid red;
+            flex-basis: 100%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .group{position: relative;}
+        .subGroupName{
+            background-color: black;
+            font-size: 24px;
+            color: gold;
+            padding: 5px 0;
+            position: sticky;
+        }
+
+        .article .group .subGroup:nth-child(2){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .subItem_img{flex-basis: calc(100%/4);}
+        .subItem img{width: 100%;}
+
+        .article .group .subGroup:nth-child(2) .subItem:last-child{
+            flex-basis: 100%;
+        }
+
+        .footer{
+            width: 100%;
+            height: 10vh;
+            font-size: 50px;
+            background-color: lightblue;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            background-color: #5B5B5B;
+        }
+        p{font-size: 12px;}
+        a{text-decoration: none;}
+        a:hover{color: brown;}
+        .subGroupName01{
+            background-color: lightgray;
+            color: black;
+        }
+        .subGroup{
+            background-color: #3C3C3C;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><img src="./image1/000001.png" alt="" width="150px" height="150px">Penthouse<a href="./drama.html">返回</a></div>
+        <div class="article">
+            <div class="group">
+                <div class="subGroupName subGroupName01">人物照</div>
+                <div class="subGroup">
+                    <div class="subItem subItem_img"><h1>李奎鎮</h1><img src="./image1/15.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>高相雅</h1><img src="./image1/16.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>李敏赫</h1><img src="./image1/17.png" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><img id="showImg" src="./image1/15.jpg" alt=""></div>
+                </div>
+
+                <div class="subGroupName subGroupName02">李奎鎮</div>
+                <div class="subGroup">
+                    <div class="subItem">法律界財閥世家的三代獨子，是個愛虛張聲勢、空有其表的男人。他從小就按照媽媽的意願生活，</div>
+                    <div class="subItem">不知不覺間就成了律師，自身是理所當然的一事無成。他事物抉擇有障礙，</div>
+                    <div class="subItem">一切都要得到姐姐或媽媽的批准後心裏才舒服，甚至是用著媽媽的錢而非給予生活費的弱者。</div>
+                    <div class="subItem">他與妻子的婚姻也是透過家庭會議決定，對此他一如既往地接受，</div>
+                    <div class="subItem">因認為媽媽的決定絕對不會錯。而他即使知道相雅每天受著媽媽的折磨，也從未為她出頭。</div>
+                    <div class="subItem">他認為想要從無名小卒變身為人人稱羨的法界財閥家兒媳，這是相雅應該要承擔的責任。</div>
+                    <div class="subItem">他習慣遇到任何事都讓相雅來收拾，只要妻子稍微作出一點反抗，就馬上向姐姐或媽媽打小報告。</div>
+                </div>
+
+                <div class="subGroupName subGroupName03">高相雅</div>
+                <div class="subGroup">
+                    <div class="subItem">雖然裝作有教養、無比幸福，但實際卻只擁有一半的婚姻生活。她曾經是備受矚目的主播，</div>
+                    <div class="subItem">現在是財閥家的兒媳，成為丈夫的附屬品。他的丈夫是祖父所經營的律師事務所的傀儡律師，</div>
+                    <div class="subItem">而她本人則是虛有其表的財閥兒媳一事，周遭的人一無所知。若要用一句話概括她的婚姻生活，</div>
+                    <div class="subItem">那就是「沒有鐵柵欄的監獄」。當婆家人極盡一切骯髒卑鄙行為後享福的同時，</div>
+                    <div class="subItem">對於相雅則是要求簡樸、節制、清廉。</div>
+                </div>
+
+                <div class="subGroupName subGroupName04">李敏赫</div>
+                <div class="subGroup">
+                    <div class="subItem">奎鎮和相雅的兒子，清雅藝術高中學生，專攻聲樂。因學習能力不好，他無法考上首爾大學，</div>
+                    <div class="subItem">現在按照爺爺奶奶的安排，向著成為藝術家的路發展。他在家裏是個沉默寡言的兒子，</div>
+                    <div class="subItem">只要一離開爸爸媽媽的視線，就會完全變成無所不談的男生。他對學校發生的事件無所不知，</div>
+                    <div class="subItem">是社交平台上最先散播消息的人。</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">網頁程式設計:第G10組</div>
+    </div>
+
+    <script>
+        let images = document.getElementsByTagName('img');
+        let showImg = document.getElementById('showImg');
+        images[0].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[1].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[2].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+    </script>
+
+</body>
+</html>

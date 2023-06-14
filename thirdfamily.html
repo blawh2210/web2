@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 80vw;
+            height: 100vh;
+            background-color: lightgray;
+            flex-direction: column;
+        }
+
+        .header{
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color:gold;
+        }
+
+        .nav{
+            background-color: lightgreen;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+        }
+
+        .navItem{
+            background-color: lightgreen;
+            border: 1px solid red;
+            flex-basis: 100%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .group{position: relative;}
+        .subGroupName{
+            background-color: black;
+            font-size: 24px;
+            color: gold;
+            padding: 5px 0;
+            position: sticky;
+        }
+
+        .article .group .subGroup:nth-child(2){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .subItem_img{flex-basis: calc(100%/4);}
+        .subItem img{width: 100%;}
+
+        .article .group .subGroup:nth-child(2) .subItem:last-child{
+            flex-basis: 100%;
+        }
+
+        .footer{
+            width: 100%;
+            height: 10vh;
+            font-size: 50px;
+            background-color: lightblue;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            background-color: #5B5B5B;
+        }
+        p{font-size: 12px;}
+        a{text-decoration: none;}
+        a:hover{color: brown;}
+        .subGroupName01{
+            background-color: lightgray;
+            color: black;
+        }
+        .subGroup{
+            background-color: #3C3C3C;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><img src="./image1/000001.png" alt="" width="150px" height="150px">Penthouse<a href="./drama.html">返回</a></div>
+        <div class="article">
+            <div class="group">
+                <div class="subGroupName subGroupName01">人物照</div>
+                <div class="subGroup">
+                    <div class="subItem subItem_img"><h1>吳允熙</h1><img src="./image1/05.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>裴羅娜</h1><img src="./image1/11.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><img id="showImg" src="./image1/05.jpg" alt=""></div>
+                </div>
+
+                <div class="subGroupName subGroupName02">吳允熙</div>
+                <div class="subGroup">
+                    <div class="subItem">在學生時期，她曾是全國公認的實力派女高音，卻因為意想不到的事故使聲帶受到致命損傷，故放棄聲樂，</div>
+                    <div class="subItem">她的人生也從那一刻起變得錯綜複雜。她不敢奢望進入大學，連交往六年的男朋友：瑞珍的丈夫何尹哲，</div>
+                    <div class="subItem">也離開了她。之後，經相親認識的丈夫在外遇時因為醉酒而從欄杆上摔落而死，</div>
+                    <div class="subItem">此時，女兒羅娜的出生，使她抱著不想讓女兒也過著因為金錢而掙扎的生活，</div>
+                    <div class="subItem">一直堅強生活著，所有兼職也願意去做。從幾年前開始，她就以暴發戶為對象，</div>
+                    <div class="subItem">為他們尋求秘密公寓以賺取生活費。對她來說，女兒就是她人生的全部。</div>
+                    <div class="subItem">當羅娜對她說想進入清雅藝術高中學習聲樂時，不想再讓女兒去碰觸聲樂，</div>
+                    <div class="subItem">之後靠著殺人犯的情報一夜致富，搬進赫拉皇宮 45樓成為新住戶。</div>
+                </div>
+
+                <div class="subGroupName subGroupName03">裴羅娜</div>
+                <div class="subGroup">
+                    <div class="subItem">對聲樂有著與眾不同的才能，性格剛強聰明。雖然她沒有爸爸也沒有錢，但從不因此而退縮，</div>
+                    <div class="subItem">用聲樂實力壓制珍妮。雖然媽媽不斷勸阻她學習聲樂，但越是這樣她就越瘋狂地唱歌，</div>
+                    <div class="subItem">比別人努力百倍千倍。經常在學校裏被同學欺凌和取笑，尤其是恩星，</div>
+                    <div class="subItem">但也因碩勛多次維護她而對碩勛有好感。</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">網頁程式設計:第G10組</div>
+    </div>
+
+    <script>
+        let images = document.getElementsByTagName('img');
+        let showImg = document.getElementById('showImg');
+        images[0].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[1].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+    </script>
+
+</body>
+</html>

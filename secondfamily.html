@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 80vw;
+            height: 100vh;
+            background-color: lightgray;
+            flex-direction: column;
+        }
+
+        .header{
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color:gold;
+        }
+
+        .nav{
+            background-color: lightgreen;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+        }
+
+        .navItem{
+            background-color: lightgreen;
+            border: 1px solid red;
+            flex-basis: 100%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .group{position: relative;}
+        .subGroupName{
+            background-color: black;
+            font-size: 24px;
+            color: gold;
+            padding: 5px 0;
+            position: sticky;
+        }
+
+        .article .group .subGroup:nth-child(2){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .subItem_img{flex-basis: calc(100%/3);}
+        .subItem img{width: 100%;}
+
+        .article .group .subGroup:nth-child(2) .subItem:last-child{
+            flex-basis: 100%;
+        }
+
+        .footer{
+            width: 100%;
+            height: 10vh;
+            font-size: 50px;
+            background-color: lightblue;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            background-color: #5B5B5B;
+        }
+        p{font-size: 12px;}
+        a{text-decoration: none;}
+        a:hover{color: brown;}
+        .subGroupName01{
+            background-color: lightgray;
+            color: black;
+        }
+        .subGroup{
+            background-color: #3C3C3C;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><img src="./image1/000001.png" alt="" width="150px" height="150px">Penthouse<a href="./drama.html">返回</a></div>
+        <div class="article">
+            <div class="group">
+                <div class="subGroupName subGroupName01">人物照</div>
+                <div class="subGroup">
+                    <div class="subItem subItem_img"><h1>千瑞珍</h1><img src="./image1/04.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>河尹哲</h1><img src="./image1/09.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>河恩星</h1><img src="./image1/10.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><img id="showImg" src="./image1/04.jpg" alt=""></div>
+                </div>
+
+                <div class="subGroupName subGroupName02">千瑞珍</div>
+                <div class="subGroup">
+                    <div class="subItem">覺得自己是世界中心的女人，想要的東西無論如何都要得手，不管是別人的夢想、或是其他女人的男人。</div>
+                    <div class="subItem">外界的聚光燈總是照耀在她身上，令她獲得了「韓國最佳女高音」、「清雅財團理事長之女」、</div>
+                    <div class="subItem">「無法超越的朋友家媽媽」等頭銜。即使不利用家世，她也能憑藉自身的實力，從幼稚園到中學也佔據著第一名的寶座。</div>
+                    <div class="subItem">她的丈夫也是個充滿野心的男人，即使自身家庭環境很差也覬覦著院長位置，是個挺誠實的人。</div>
+                    <div class="subItem">為了讓他擔任VIP外科科長，她也盡自己的力量幫助丈夫。</div>
+                </div>
+
+                <div class="subGroupName subGroupName03">河尹哲</div>
+                <div class="subGroup">
+                    <div class="subItem">做為懂得對現實適當妥協的人，他是按照階級來待人處事的聰明人。他認為男人必須掌握金錢和權力，</div>
+                    <div class="subItem">但作為醫生的能力與實力也是不容小覷的。比起深思熟慮，他更加重視損益計算，比起努力更重視實力，</div>
+                    <div class="subItem">比起靜待觀察的意見更重視實際手術。他是國內手術預約患者人數最多，為醫院創造200%收益率的始祖，</div>
+                    <div class="subItem">也是下屆清雅醫院的院長。他清楚明白自己的成功有很大部分要歸功於妻子的協助，</div>
+                    <div class="subItem">目標明確的妻子有時候會讓他感到負擔，女兒的教育都全權交付給了妻子。作為人生伴侶，</div>
+                    <div class="subItem">他曾經認為瑞珍是一個讓他非常滿意的妻子，夫妻倆都擁有一致「成為王者」的目標，</div>
+                    <div class="subItem">但兩人的關係卻逐漸變得惡劣。也是羅娜的母親允熙的高中男友。</div>
+                </div>
+
+                <div class="subGroupName subGroupName04">河恩星</div>
+                <div class="subGroup">
+                    <div class="subItem">在清雅藝術高中專攻聲樂。她總是因為實力停留在第二名位置，而產生無法滿足媽媽的劣等感，</div>
+                    <div class="subItem">是個帶有乖巧子女情結的人，也是唯一在赫拉皇宮裡對雪兒態度比較好的人，卻因為雪兒的出現，</div>
+                    <div class="subItem">讓握有黑幕的證據威脅到自己的地位而開始走上無法回頭的路，</div>
+                    <div class="subItem">之後更因各方面的壓迫下而患上冒名頂替症候群。喜歡碩勳，並因此更討厭羅娜。</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">網頁程式設計:第G10組</div>
+    </div>
+
+    <script>
+        let images = document.getElementsByTagName('img');
+        let showImg = document.getElementById('showImg');
+        images[0].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[1].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[2].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+    </script>
+</body>
+</html>

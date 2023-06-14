@@ -1,0 +1,167 @@
+
+.gallery {
+    width: 70%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    position: relative;
+    width: 10%;
+    height: 10rem;
+    border-radius: 20px;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    transition: width 1s, opacity 2s, bottom 2s;
+}
+.photo:nth-child(3) {
+    background-image: url('../img/book/解憂雜貨店.jfif');
+}
+
+.photo:nth-child(4) {
+    background-image: url('../img/book/流星之絆.jpeg');
+}
+
+.photo:nth-child(5) {
+    background-image: url('../img/book/操縱彩虹的少年.jfif');
+}
+
+.photo:nth-child(6) {
+    background-image: url('../img/book/夢幻花.jpg');
+}
+
+.photo:nth-child(8) {
+    background-image: url('../img/book/HarryPotter.jfif');
+}
+.photo:nth-child(9) {
+    background-image: url('../img/book/Twilight.jpg');
+}
+
+.photo:nth-child(10) {
+    background-image: url('../img/book/TheSelection.jpg');
+}
+.photo:hover {
+    cursor: pointer;
+    opacity: 1;
+    width: 30%;
+    bottom: 5%;
+}
+
+.photo1 {
+    position: relative;
+    width: 10%;
+    height: 10rem;
+    border-radius: 20px;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    transition: width 1s, opacity 2s, bottom 2s;
+}
+.photo1:nth-child(2) {
+    background-image: url('../img/book/真千金他只想當鹹魚.jfif');
+}
+
+.photo1:nth-child(3) {
+    background-image: url('../img/book/老油條和小辣椒.jfif');
+}
+
+.photo1:nth-child(4) {
+    background-image: url('../img/book/被病嬌拐走後，奶兇小團寵野翻了.jfif');
+}
+.photo1:nth-child(5) {
+    background-image: url('../img/book/bking.jpg');
+}
+
+.photo1:nth-child(6) {
+    background-image: url('../img/book/開局血腥愛情故事!粉絲說我有病.jfif');
+}
+.photo1:hover {
+    cursor: pointer;
+    opacity: 1;
+    width: 30%;
+    bottom: 5%;
+}
+
+.photo2 {
+    position: relative;
+    width: 10%;
+    height: 10rem;
+    border-radius: 20px;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    transition: width 1s, opacity 2s, bottom 2s;
+}
+.photo2:nth-child(3) {
+    background-image: url('../img/book/載著流星的人.jpg');
+}
+
+.photo2:nth-child(4) {
+    background-image: url('../img/book/少年的你，如此美麗.jfif');
+}
+
+.photo2:nth-child(5) {
+    background-image: url('../img/book/微光北極星.jpg');
+}
+.photo2:nth-child(7) {
+    background-image: url('../img/book/全球高考.jfif');
+}
+
+.photo2:nth-child(8) {
+    background-image: url('../img/book/偽裝學渣.jpg');
+}
+.photo2:hover {
+    cursor: pointer;
+    opacity: 1;
+    width: 30%;
+    bottom: 5%;
+}
+
+.modal{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal_body{
+    width: 30%;
+    height: 80%;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    transform: opacity 2s;
+}
+.modal_note{
+    width: 30%;
+    height: 80%;
+    background-color: rgb(128, 141, 145);
+    background-size: cover;
+    background-position: center;
+}
+.fade{
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+    font-size: 30px;
+    word-wrap: break-word; /* 控制單詞換行 */
+    overflow-wrap: break-word; /* 考慮到非英文單詞的換行 */
+    overflow:auto;
+  }
+
+

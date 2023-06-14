@@ -1,0 +1,33 @@
+
+*{
+    font-size: 30px;
+}
+.books{
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bL{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bT{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bW{
+    display: flex;
+    flex-wrap: wrap;
+}
+.booktitle{
+    border: 3px solid wheat;
+    flex-basis: 100vw;
+}
+.book{
+    border: 2px solid darkcyan;
+    flex-grow: 1;
+    align-content: space-evenly;
+    text-align: center;
+}

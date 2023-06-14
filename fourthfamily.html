@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 80vw;
+            height: 100vh;
+            background-color: lightgray;
+            flex-direction: column;
+        }
+
+        .header{
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color:gold;
+        }
+
+        .nav{
+            background-color: lightgreen;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+        }
+
+        .navItem{
+            background-color: lightgreen;
+            border: 1px solid red;
+            flex-basis: 100%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .group{position: relative;}
+        .subGroupName{
+            background-color: black;
+            font-size: 24px;
+            color: gold;
+            padding: 5px 0;
+            position: sticky;
+        }
+
+        .article .group .subGroup:nth-child(2){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .subItem_img{flex-basis: calc(100%/4);}
+        .subItem img{width: 100%;}
+
+        .article .group .subGroup:nth-child(2) .subItem:last-child{
+            flex-basis: 100%;
+        }
+
+        .footer{
+            width: 100%;
+            height: 10vh;
+            font-size: 50px;
+            background-color: lightblue;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            background-color: #5B5B5B;
+        }
+        p{font-size: 12px;}
+        a{text-decoration: none;}
+        a:hover{color: brown;}
+        .subGroupName01{
+            background-color: lightgray;
+            color: black;
+        }
+        .subGroup{
+            background-color: #3C3C3C;
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><img src="./image1/000001.png" alt="" width="150px" height="150px">Penthouse<a href="./drama.html">返回</a></div>
+        <div class="article">
+            <div class="group">
+                <div class="subGroupName subGroupName01">人物照</div>
+                <div class="subGroup">
+                    <div class="subItem subItem_img"><h1>姜瑪莉</h1><img src="./image1/12.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>劉東弼</h1><img src="./image1/13.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><h1>劉珍妮</h1><img src="./image1/14.jpg" alt="" width="20vw" height="130vh"></div>
+                    <div class="subItem subItem_img"><img id="showImg" src="./image1/12.jpg" alt=""></div>
+                </div>
+
+                <div class="subGroupName subGroupName02">姜瑪莉</div>
+                <div class="subGroup">
+                    <div class="subItem">「像狗般賺錢，宰相般揮霍」是她的人生座右銘。作為將丈夫送到杜拜後獨守空房的女人，</div>
+                    <div class="subItem">雖然表面上看起來非常熱血，實際了解後卻能發現她相當精打細算且極度鎮靜。</div>
+                    <div class="subItem">她心裡嘲諷著金湯匙、對外卻譏笑著土湯匙，過著將所有壓力都釋放在對自家傭人及司機作威作福的生活。</div>
+                    <div class="subItem">但只要關乎女兒珍妮的事，哪怕是盜竊也能為女兒做到，因為珍妮是她唯一的珍貴骨肉。</div>
+                </div>
+
+                <div class="subGroupName subGroupName03">劉東弼</div>
+                <div class="subGroup">
+                    <div class="subItem">瑪莉的丈夫，珍妮的爸爸，丹泰的得力助手，建築公司代表，目前在杜拜做生意。</div>
+                </div>
+
+                <div class="subGroupName subGroupName04">劉珍妮</div>
+                <div class="subGroup">
+                    <div class="subItem">東弼和瑪莉的獨生女，夢想成為未來的聲樂家，性格目中無人，沒有實力但有不切實際的盼望。</div>
+                    <div class="subItem">自從家庭變得富有之後，炫耀金錢是她的愛好，並喜愛無視沒錢的孩子。</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">網頁程式設計:第G10組</div>
+    </div>
+
+    <script>
+        let images = document.getElementsByTagName('img');
+        let showImg = document.getElementById('showImg');
+        images[0].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[1].addEventListener('click',function(){
+            showImg.src = this.src;
+        });
+        images[2].addEventListener('click',function(){
+            showImg.src = this.src;
+        }); 
+    </script>
+
+</body>
+</html>

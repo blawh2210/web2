@@ -1,0 +1,23 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    border: 2px dashed black;
+    margin: 1% 5%;
+    padding: 1%;
+    justify-content: space-around;
+    align-items: center;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 30%;
+    height: 30%;
+}

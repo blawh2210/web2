@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 80vw;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #A6FFA6;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 50px;
+            color: black;
+        }
+
+        .about{
+            font-size: 25px;
+        }
+
+        .navItem {
+            background-color: lightgreen;
+            border: 1px solid red;
+            flex-basis: 100%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .group {
+            position: relative;
+        }
+
+        .subGroupName {
+            background-color: black;
+            font-size: 24px;
+            color: gold;
+            padding: 5px 0;
+            position: sticky;
+        }
+
+        .article .group .subGroup:nth-child(2) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .article .group .subGroup:nth-child(2) .subItem:last-child {
+            flex-basis: 100%;
+        }
+
+        .footer {
+            width: 100%;
+            height: 10vh;
+            font-size: 50px;
+            background-color: #A6FFA6;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        .subGroup {
+            background-color: #0080FF;
+            color: black;
+        }
+
+        .subItem {
+            font-size: 50px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./image1/000002.png" alt="" width="150px" height="150px">
+            大學的日常生活
+            <div class="about"><a href="./team.html">關於我們</a></div>
+        </div>
+        <div class="article">
+            <div class="group">
+                <div class="subGroup">
+                    <div class="subItem">飲食<a href="./food.html"><img src="./image1/11111.png" alt=""></a>遊戲<a
+                            href="./game.html"><img src="./image1/22222.jpg" alt=""></a></div>
+                    <div class="subItem">追劇<a href="./process.html"><img src="./image1/33333.jpg" alt=""></a></div>
+                    <div class="subItem">追星<a href="./actor.html"><img src="./image1/44444.jpg" alt=""></a>小說<a href="./novel.html"><img
+                                src="./image1/55555.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="footer">G10:王文伶,蕭沛汝,張家樺,蘇竣韋</div>
+        </div>
+</body>
+
+</html>
